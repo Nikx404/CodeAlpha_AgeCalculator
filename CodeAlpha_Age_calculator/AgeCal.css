@@ -4,11 +4,11 @@
 }
 
 html, body {
-    height: 100%; /* Ensure body takes full height */
+    height: 100%; 
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    margin: 0; /* Remove default margin */
+    justify-content: center; 
+    align-items: center; 
+    margin: 0; 
     background-color: rgb(205, 205, 205);
 }
 
@@ -20,7 +20,7 @@ html, body {
 }
 
 table {
-    width: 100%; /* Ensure table uses full width of container */
+    width: 100%; 
     text-align: left;
     border-collapse: collapse;
 }
@@ -30,13 +30,13 @@ table th, table td {
 }
 
 button {
-    position: fixed; /* Fixed position */
-    top: 430px; /* Adjusted position */
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Center horizontally using transform */
+    position: fixed; 
+    top: 430px; 
+    left: 50%; 
+    transform: translateX(-50%);
     color: rgba(0, 0, 255, 0.587);
     height: 30px;
-    width: 100px; /* Adjusted for better fit */
+    width: 100px; 
     text-decoration: none;
     border: none;
     background-color: white;
