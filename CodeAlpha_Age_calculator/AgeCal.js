@@ -21,14 +21,14 @@ function Cal() {
 
     if (ageDays < 0) {
         ageMonths--;
-        const lastMonthDate = new Date(cdt.getFullYear(), cdt.getMonth() - 1, dob.getDate());
-        ageDays += (cdt - lastMonthDate) / (1000 * 60 * 60 * 24); 
+        const lastMonth = new Date(cdt.getFullYear(), cdt.getMonth(), 0); 
+        ageDays += lastMonth.getDate();
     }
 
     if (ageMonths < 0) {
         ageYears--;
-        ageMonths += 12; 
+        ageMonths += 12;
     }
 
-    document.getElementById('result').textContent = `Your age is ${ageYears} years, ${ageMonths} months, and ${Math.floor(ageDays)} days.`;
+    document.getElementById('result').textContent = `Your age is ${ageYears} years, ${ageMonths} months, and ${ageDays} days.`;
 }
